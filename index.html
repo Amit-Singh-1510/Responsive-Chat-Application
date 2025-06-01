@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <button id="sidebarToggle" class="toggle-btn">☰</button>
+      <span class="app-title">Chat App</span>
+    </div>
+  </header>
+
+  <button class="dark-toggle" id="darkToggle">🌙</button>
+
+  <div class="container">
+    <aside class="left-sidebar collapsed">
+      <div id="userList" class="user-list">
+        <!-- Dummy users -->
+        <div class="user" data-name="Alice">Jessica Lee</div>
+        <div class="user" data-name="Bob Smith">George Martin</div>
+        <div class="user" data-name="Charlie Davis">Ivan Petrov</div>
+        <div class="user" data-name="Diana Prince">Diana Prince</div>
+        <div class="user" data-name="Nina Patel">Nina Patel</div>
+        <div class="user" data-name="Steve Rogers">Steve Rogers</div>
+        <div class="user" data-name="Oliver Stone">Oliver Stone</div>
+        <div class="user" data-name="Laura Wilson">Laura Wilson</div>
+      </div>
+    </aside>
+
+    <main class="chat-main">
+      <div class="chat-header">
+        <div class="chat-user-info">
+          <img class="avatar" src="https://i.pravatar.cc/40" alt="User Avatar" />
+          <h2 id="chatTitle">Bot</h2>
+        </div>
+      </div>
+      <div class="chat-area" id="chatArea"></div>
+      <div class="chat-footer">
+        <textarea id="chatInput" placeholder="Type a message..."></textarea>
+        <button id="sendBtn" disabled>➤</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
